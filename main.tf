@@ -10,7 +10,7 @@ resource "aws_instance" "out_first" {
   tags {
     Name = "Final commitment"
 }
-
+}
 resource "aws_security_group" "mysg" {
   name        = "allow-ssh"
   description = "Allow ssh traffic"
