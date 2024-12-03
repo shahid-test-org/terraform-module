@@ -6,7 +6,7 @@ resource "aws_instance" "out_first" {
   ami                    = var.ami_id
   instance_type          = var.instance_type
   vpc_security_group_ids = [aws_security_group.mysg.id]
-  key_name               = newkeypair
+  key_name               = "newkeypair"
   tags {
     Name = "Final commitment"
 }
